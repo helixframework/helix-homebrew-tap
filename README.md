@@ -1,12 +1,13 @@
 # helix-homebrew-tap
 
-Homebrew tap for the Helix CLI.
+Homebrew tap for Helix tooling.
 
 ## Install
 
 ```bash
 brew tap helixframework/helix-homebrew-tap
 brew install helix
+brew install helix-dev
 ```
 
 ## Upgrade
@@ -14,20 +15,26 @@ brew install helix
 ```bash
 brew update
 brew upgrade helix
+brew upgrade helix-dev
 ```
 
 ## Uninstall
 
 ```bash
 brew uninstall helix
+brew uninstall helix-dev
 brew untap helixframework/helix-homebrew-tap
 ```
 
 ## Formula
 
 - `Formula/helix.rb`
+- `Formula/helix-dev.rb`
 
-The formula installs the `helix` executable from the `helix-cli.zip` GitHub release asset.
+Formulas:
+
+- `helix` installs the `helix` executable from the `helix-cli.zip` GitHub release asset.
+- `helix-dev` installs the `helix-dev` onboarding command from the Helix `main` source archive.
 
 ## Maintainers
 
